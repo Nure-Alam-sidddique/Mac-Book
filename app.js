@@ -56,7 +56,8 @@ function cupponCode() {
      totalCost.innerText = parseFloat(totalCost.innerText) - parseFloat(totalCost.innerText) * 0.2;
      cupponBtn.setAttribute("disabled", true);
    }
-   finalTotal.innerText = totalCost.innerText;
+  finalTotal.innerText = totalCost.innerText;
+  cupponInput.value = ' ';
   //  console.log(totalCost.innerText);
 }
 
