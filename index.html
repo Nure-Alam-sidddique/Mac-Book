@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Mac Book Pro</title>
+  </head>
+  <body>
+    <main>
+      <section class="w-10/12 mx-auto">
+        <div class="grid grid-cols-2 mt-10">
+          <div class="img">
+            <img class="w-96 h-96" src="/images/mac.png" alt="" srcset="" />
+          </div>
+          <div class="feature-shopping-cart">
+            <div id="mac-info">
+              <h2 class="text-3xl mb-3">
+                Customize your Blue 24-inch iMac with Apple M1 chip
+              </h2>
+              <p class="mb-3">
+                Apple M1 chip with 8-core CPU with 4 performance and 4
+                efficiency cores, 7 core GPU , and 16 core Neural Enigine 8GB
+                Memory 256GB SSD storage Two Thursbolt/USB 4 pairs Magic Mouse
+                keyborad , US English
+              </p>
+            </div>
+            <div class="featured-button">
+              <div class="memory-button">
+                <h4 class="text-xl mb-2">Memory</h4>
+                <button class="border px-4 py-1 rounded">
+                  8GB unified memory
+                </button>
+                <button class="border px-4 py-1 rounded">
+                  16GB unified memory
+                </button>
+              </div>
+              <div class="storage-button">
+                <h4 class="text-xl mb-2 mt-10">Storage</h4>
+                <button class="border px-4 py-1 rounded">
+                  256GB SSD storage
+                </button>
+                <button class="border px-4 py-1 rounded">
+                  512GB SSD storage
+                </button>
+                <button class="border px-4 py-1 rounded">
+                  1TB SSD storage
+                </button>
+              </div>
+              <div class="shipping-button">
+                <h4 class="text-xl mb-2 mt-10">Choose your delivery option</h4>
+                <button class="border px-4 py-1 rounded">
+                  Friday, Aug 25 FREE Prime Delivery
+                </button>
+                <button class="border px-4 py-1 rounded">
+                  Friday, Aug 21 Delivery charge $20
+                </button>
+              </div>
+            </div>
+            <div class="shipping-calculate mt-10">
+              <table class="w-2/5 border">
+                <tr>
+                  <td>Best Prize</td>
+                  <td>$<span>1299</span></td>
+                  <td><hr /></td>
+                </tr>
+                <tr>
+                  <td>Extra Memory Cost</td>
+                  <td>$<span>0</span></td>
+                </tr>
+                <tr>
+                  <td>Extra storage Cost</td>
+                  <td>$<span>0</span></td>
+                </tr>
+                <tr>
+                  <td>Delivery charge</td>
+                  <td>$<span>0</span></td>
+                </tr>
+                <tr>
+                  <td>Total Price</td>
+                  <td>$<span>1299</span></td>
+                </tr>
+              </table>
+              <div class="cuppon-code mt-5 w-2/4">
+                <p>Add cuppon code</p>
+                <input
+                  id="cuppon-field"
+                  type="text"
+                  class="border rounded py-2 px-3"
+                />
+                <button id="cuppon-btn" class="bg-red-500 py-2 px-3 text-white">
+                  Apply
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-5" />
+
+        <h3 class="text-center text-4xl">Total : $<span>1299</span></h3>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
