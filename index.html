@@ -32,57 +32,60 @@
             <div class="featured-button">
               <div class="memory-button">
                 <h4 class="text-xl mb-2">Memory</h4>
-                <button class="border px-4 py-1 rounded">
+                <button class="border px-4 py-1 rounded" id="memory-btn-8gb">
                   8GB unified memory
                 </button>
-                <button class="border px-4 py-1 rounded">
+                <button class="border px-4 py-1 rounded" id="memory-btn-16gb">
                   16GB unified memory
                 </button>
               </div>
               <div class="storage-button">
                 <h4 class="text-xl mb-2 mt-10">Storage</h4>
-                <button class="border px-4 py-1 rounded">
+                <button class="border px-4 py-1 rounded" id="256gb-ssd-storage">
                   256GB SSD storage
                 </button>
-                <button class="border px-4 py-1 rounded">
+                <button class="border px-4 py-1 rounded" id="512gb-ssd-storage">
                   512GB SSD storage
                 </button>
-                <button class="border px-4 py-1 rounded">
+                <button class="border px-4 py-1 rounded" id="1tb-ssd-storage">
                   1TB SSD storage
                 </button>
               </div>
               <div class="shipping-button">
                 <h4 class="text-xl mb-2 mt-10">Choose your delivery option</h4>
-                <button class="border px-4 py-1 rounded">
+                <button
+                  class="border px-4 py-1 rounded bg-black text-white"
+                  id="delivery-charge-free"
+                >
                   Friday, Aug 25 FREE Prime Delivery
                 </button>
-                <button class="border px-4 py-1 rounded">
+                <button class="border px-4 py-1 rounded" id="delivery-charge">
                   Friday, Aug 21 Delivery charge $20
                 </button>
               </div>
             </div>
             <div class="shipping-calculate mt-10">
-              <table class="w-2/5 border">
-                <tr>
+              <table class="w-10/12">
+                <tr class="border-b-2">
                   <td>Best Prize</td>
-                  <td>$<span>1299</span></td>
+                  <td>$<span id="best-price">1299</span></td>
                   <td><hr /></td>
                 </tr>
-                <tr>
+                <tr class="border-b-2">
                   <td>Extra Memory Cost</td>
-                  <td>$<span>0</span></td>
+                  <td>$<span id="memory-cost">0</span></td>
                 </tr>
-                <tr>
+                <tr class="border-b-2">
                   <td>Extra storage Cost</td>
-                  <td>$<span>0</span></td>
+                  <td>$<span id="storage-cost">0</span></td>
                 </tr>
-                <tr>
+                <tr class="border-b-2 border-black">
                   <td>Delivery charge</td>
-                  <td>$<span>0</span></td>
+                  <td>$<span id="delivery-cost">0</span></td>
                 </tr>
                 <tr>
                   <td>Total Price</td>
-                  <td>$<span>1299</span></td>
+                  <td>$<span id="total-cost">1299</span></td>
                 </tr>
               </table>
               <div class="cuppon-code mt-5 w-2/4">
@@ -101,7 +104,9 @@
         </div>
         <hr class="mt-5" />
 
-        <h3 class="text-center text-4xl">Total : $<span>1299</span></h3>
+        <h3 class="text-center text-4xl">
+          Total : $<span id="final-total">1299</span>
+        </h3>
       </section>
     </main>
     <script src="app.js"></script>
